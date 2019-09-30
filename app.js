@@ -27,15 +27,10 @@ const org2_depts = [
 ];
 
 
-
 const output = document.getElementById("organization");
 let htmlStr =  PrintDepts(org1_depts, "Organization 1") + PrintDepts(org2_depts, "Organization 2");
 output.innerHTML = htmlStr;
 
-// "<h2>Organization 1</h2>" + '<div class= "org-structure">' + htmlStr +"</div>";
-
-// htmlStr = PrintDepts(org2_depts, 0);
-// output.innerHTML += "<h2>Organization 2</h2>" + '<div class= "org-structure">' + htmlStr +"</div>";
 
 function PrintDepts(depts,departmentName){
    return  "<h2>"+departmentName+"</h2>" + '<div class= "org-structure">' + CreateList(depts, 0) +"</div>"
